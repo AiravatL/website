@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="bg-slate-900 min-h-screen text-slate-200">
-      <header className="pt-32 pb-12 text-center bg-gradient-to-br from-slate-900 via-slate-800 to-orange-900/10 border-b border-slate-800">
+    <main className="bg-white min-h-screen text-slate-700">
+      <header className="pt-32 pb-12 text-center bg-gradient-to-br from-violet-50 via-white to-violet-100 border-b border-violet-100">
         <div className="max-w-3xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">AiravatL Partner</div>
-          <h1 className="text-4xl md:text-5xl font-light text-white">
-            Privacy <span className="font-medium text-orange-400">Policy</span>
+          <div className="text-xs uppercase tracking-[0.2em] text-violet-700 mb-3 font-semibold">AiravatL Partner</div>
+          <h1 className="text-4xl md:text-5xl font-light text-slate-900">
+            Privacy <span className="font-medium text-violet-900">Policy</span>
           </h1>
-          <p className="mt-4 text-slate-400">
+          <p className="mt-4 text-slate-600">
             For Pilots, Transporters, and Employee Drivers using the AiravatL Partner mobile application.
           </p>
           <p className="mt-3 text-sm text-slate-500">Effective Date: 20 April 2026 &nbsp;|&nbsp; Version 1.3</p>
@@ -25,10 +25,10 @@ export default function PrivacyPage() {
       </header>
 
       <article className="max-w-3xl mx-auto px-6 py-16 prose-policy">
-        <Link href="/" className="text-sm text-slate-400 hover:text-orange-400">&larr; Back to home</Link>
+        <Link href="/" className="text-sm text-violet-700 hover:text-violet-900">&larr; Back to home</Link>
 
         <Callout>
-          <strong className="text-orange-400">AT A GLANCE:</strong> This Privacy Policy explains what personal data
+          <strong className="text-violet-900">AT A GLANCE:</strong> This Privacy Policy explains what personal data
           BSP Sparton Private Limited collects when you use the AiravatL Partner App, why we collect it, who we
           share it with, and what rights you have under Indian law. In short: we collect phone number, KYC documents,
           vehicle and banking details, trip and location data, and app-usage information to run the marketplace,
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
         <H2 id="s1">1. Introduction</H2>
         <H3>1.1 Who we are</H3>
         <P>
-          This Privacy Policy (the &ldquo;Policy&rdquo;) is issued by <strong className="text-white">BSP Sparton Private Limited</strong>,
+          This Privacy Policy (the &ldquo;Policy&rdquo;) is issued by <strong className="text-slate-900">BSP Sparton Private Limited</strong>,
           a company incorporated under the Companies Act, 2013 (CIN: U62020AS2024PTC026345), having its registered office at
           1B, 1st Floor, Saroj Estate, K.C. Patowary Road, Ulubari, Guwahati 781007, Assam, India (&ldquo;BSP Sparton&rdquo;,
           &ldquo;AiravatL&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;). AiravatL is the operator of the
@@ -91,15 +91,15 @@ export default function PrivacyPage() {
 
         <H2 id="s2">2. Definitions</H2>
         <UL>
-          <li><strong className="text-white">&ldquo;Consent&rdquo;</strong> &mdash; free, specific, informed, unconditional, and unambiguous agreement provided by you in respect of a specific processing purpose, as required by Section 6 of the DPDP Act.</li>
-          <li><strong className="text-white">&ldquo;Data Fiduciary&rdquo;</strong> &mdash; the person who determines the purpose and means of processing personal data &mdash; in this case, BSP Sparton Private Limited.</li>
-          <li><strong className="text-white">&ldquo;Data Principal&rdquo;</strong> &mdash; the individual to whom personal data relates &mdash; in this case, you as a Partner.</li>
-          <li><strong className="text-white">&ldquo;Data Processor&rdquo;</strong> &mdash; a person who processes personal data on behalf of a Data Fiduciary.</li>
-          <li><strong className="text-white">&ldquo;DPDP Act&rdquo;</strong> &mdash; the Digital Personal Data Protection Act, 2023, together with the rules, regulations, and notifications issued thereunder from time to time.</li>
-          <li><strong className="text-white">&ldquo;Personal Data&rdquo;</strong> &mdash; any data about an individual who is identifiable by or in relation to such data.</li>
-          <li><strong className="text-white">&ldquo;Processing&rdquo;</strong> &mdash; any operation performed on personal data, including collection, recording, organisation, storage, use, sharing, disclosure, erasure, or destruction, whether by automated or other means.</li>
-          <li><strong className="text-white">&ldquo;Sensitive Personal Data&rdquo;</strong> &mdash; personal data that reveals financial information, passwords, biometric identifiers, or any other category treated as sensitive under applicable law.</li>
-          <li><strong className="text-white">&ldquo;Services&rdquo;</strong> &mdash; the marketplace services provided through the Partner App as described in the Terms.</li>
+          <li><strong className="text-slate-900">&ldquo;Consent&rdquo;</strong> &mdash; free, specific, informed, unconditional, and unambiguous agreement provided by you in respect of a specific processing purpose, as required by Section 6 of the DPDP Act.</li>
+          <li><strong className="text-slate-900">&ldquo;Data Fiduciary&rdquo;</strong> &mdash; the person who determines the purpose and means of processing personal data &mdash; in this case, BSP Sparton Private Limited.</li>
+          <li><strong className="text-slate-900">&ldquo;Data Principal&rdquo;</strong> &mdash; the individual to whom personal data relates &mdash; in this case, you as a Partner.</li>
+          <li><strong className="text-slate-900">&ldquo;Data Processor&rdquo;</strong> &mdash; a person who processes personal data on behalf of a Data Fiduciary.</li>
+          <li><strong className="text-slate-900">&ldquo;DPDP Act&rdquo;</strong> &mdash; the Digital Personal Data Protection Act, 2023, together with the rules, regulations, and notifications issued thereunder from time to time.</li>
+          <li><strong className="text-slate-900">&ldquo;Personal Data&rdquo;</strong> &mdash; any data about an individual who is identifiable by or in relation to such data.</li>
+          <li><strong className="text-slate-900">&ldquo;Processing&rdquo;</strong> &mdash; any operation performed on personal data, including collection, recording, organisation, storage, use, sharing, disclosure, erasure, or destruction, whether by automated or other means.</li>
+          <li><strong className="text-slate-900">&ldquo;Sensitive Personal Data&rdquo;</strong> &mdash; personal data that reveals financial information, passwords, biometric identifiers, or any other category treated as sensitive under applicable law.</li>
+          <li><strong className="text-slate-900">&ldquo;Services&rdquo;</strong> &mdash; the marketplace services provided through the Partner App as described in the Terms.</li>
         </UL>
 
         <H2 id="s3">3. Personal data we collect</H2>
@@ -152,8 +152,8 @@ export default function PrivacyPage() {
         <H4>3.2.2 Location data</H4>
         <P>With your express consent and only during active Trips, we collect:</P>
         <UL>
-          <li><strong className="text-white">Foreground location</strong> (latitude, longitude, accuracy, speed, heading) from the time a Trip is started until it is completed or cancelled</li>
-          <li><strong className="text-white">Background location</strong> during in_transit stages, to provide live Trip updates to the Consignor, to compute ETA, and to support geofence-based events</li>
+          <li><strong className="text-slate-900">Foreground location</strong> (latitude, longitude, accuracy, speed, heading) from the time a Trip is started until it is completed or cancelled</li>
+          <li><strong className="text-slate-900">Background location</strong> during in_transit stages, to provide live Trip updates to the Consignor, to compute ETA, and to support geofence-based events</li>
           <li>Location is paused automatically during at_pickup and loading stages to conserve battery and reduce unnecessary capture</li>
         </UL>
         <P>Outside active Trips, the Partner App does not collect location data.</P>
@@ -169,7 +169,7 @@ export default function PrivacyPage() {
           <li>Automated analytics on how the Partner App is used (for example, screen flows, feature adoption, and funnel completion rates)</li>
         </UL>
         <Callout>
-          <strong className="text-orange-400">NOTE ON FUTURE TOOLS:</strong> The Partner App may, in future, use additional third-party tools for crash reporting, performance monitoring, or usage analytics. Where we introduce such tools, they will process the data described in Section 3.2.4 on our behalf, bound by data-processing agreements consistent with this Policy. We will update the list of processors in Section 7 and, where required, seek fresh consent.
+          <strong className="text-violet-900">NOTE ON FUTURE TOOLS:</strong> The Partner App may, in future, use additional third-party tools for crash reporting, performance monitoring, or usage analytics. Where we introduce such tools, they will process the data described in Section 3.2.4 on our behalf, bound by data-processing agreements consistent with this Policy. We will update the list of processors in Section 7 and, where required, seek fresh consent.
         </Callout>
 
         <H3>3.3 Data we receive from third parties</H3>
@@ -420,7 +420,7 @@ export default function PrivacyPage() {
         <H4>9.3.4 Where to track account deletion</H4>
         <P>
           For the latest instructions and to initiate a deletion request, you may also visit the{" "}
-          <Link className="text-orange-400 hover:underline" href="/delete-account">account-deletion page</Link>{" "}
+          <Link className="text-violet-900 hover:underline" href="/delete-account">account-deletion page</Link>{" "}
           linked from the AiravatL website.
         </P>
 
@@ -450,7 +450,7 @@ export default function PrivacyPage() {
         <H2 id="s10">10. Grievance redressal and contact</H2>
         <H3>10.1 Grievance Officer</H3>
         <ContactBlock>
-          <strong className="text-white">Grievance Officer</strong><br />
+          <strong className="text-slate-900">Grievance Officer</strong><br />
           BSP Sparton Private Limited<br />
           1B, 1st Floor, Saroj Estate, K.C. Patowary Road, Ulubari, Guwahati 781007, Assam, India<br />
           Email: <ExtLink href="mailto:admin.airavatl@bspsparton.in">admin.airavatl@bspsparton.in</ExtLink><br />
@@ -548,7 +548,7 @@ export default function PrivacyPage() {
 
         <H2 id="s16">16. Contact information</H2>
         <ContactBlock>
-          <strong className="text-white">BSP Sparton Private Limited</strong><br />
+          <strong className="text-slate-900">BSP Sparton Private Limited</strong><br />
           CIN: U62020AS2024PTC026345<br />
           1B, 1st Floor, Saroj Estate, K.C. Patowary Road, Ulubari, Guwahati 781007, Assam, India<br />
           Email (Grievance Officer): <ExtLink href="mailto:admin.airavatl@bspsparton.in">admin.airavatl@bspsparton.in</ExtLink><br />
@@ -561,7 +561,7 @@ export default function PrivacyPage() {
           agreed to this Privacy Policy.
         </P>
 
-        <hr className="border-slate-800 mt-12" />
+        <hr className="border-violet-100 mt-12" />
         <p className="text-center text-sm text-slate-500 mt-6">&mdash; End of Privacy Policy &mdash;</p>
       </article>
     </main>
@@ -569,32 +569,32 @@ export default function PrivacyPage() {
 }
 
 function H2({ id, children }: { id?: string; children: React.ReactNode }) {
-  return <h2 id={id} className="text-2xl font-semibold text-white mt-12 mb-4 scroll-mt-24">{children}</h2>;
+  return <h2 id={id} className="text-2xl font-semibold text-violet-900 mt-12 mb-4 scroll-mt-24">{children}</h2>;
 }
 function H3({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-lg font-semibold text-white mt-6 mb-2">{children}</h3>;
+  return <h3 className="text-lg font-semibold text-slate-900 mt-6 mb-2">{children}</h3>;
 }
 function H4({ children }: { children: React.ReactNode }) {
-  return <h4 className="text-base font-semibold text-slate-200 mt-4 mb-1.5">{children}</h4>;
+  return <h4 className="text-base font-semibold text-slate-800 mt-4 mb-1.5">{children}</h4>;
 }
 function P({ children }: { children: React.ReactNode }) {
-  return <p className="text-slate-400 leading-relaxed mb-3">{children}</p>;
+  return <p className="text-slate-600 leading-relaxed mb-3">{children}</p>;
 }
 function UL({ children }: { children: React.ReactNode }) {
-  return <ul className="list-disc list-outside pl-6 space-y-1 text-slate-400 mb-4">{children}</ul>;
+  return <ul className="list-disc list-outside pl-6 space-y-1 text-slate-600 mb-4">{children}</ul>;
 }
 function Callout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-6 rounded-xl border border-orange-400/30 bg-orange-400/10 px-5 py-4 text-slate-200 leading-relaxed">
+    <div className="my-6 rounded-xl border border-violet-200 bg-violet-50 px-5 py-4 text-slate-700 leading-relaxed">
       {children}
     </div>
   );
 }
 function ContactBlock({ children }: { children: React.ReactNode }) {
-  return <div className="my-4 rounded-xl border border-slate-700 bg-slate-800 px-5 py-4 text-slate-300 leading-relaxed">{children}</div>;
+  return <div className="my-4 rounded-xl border border-violet-200 bg-violet-50 px-5 py-4 text-slate-700 leading-relaxed">{children}</div>;
 }
 function ExtLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return <a href={href} className="text-orange-400 hover:underline">{children}</a>;
+  return <a href={href} className="text-violet-700 hover:text-violet-900 hover:underline">{children}</a>;
 }
 function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
@@ -603,7 +603,7 @@ function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
         <thead>
           <tr>
             {headers.map((h) => (
-              <th key={h} className="border border-slate-700 bg-slate-800 px-3 py-2 text-left text-white font-semibold">{h}</th>
+              <th key={h} className="border border-violet-200 bg-violet-50 px-3 py-2 text-left text-violet-900 font-semibold">{h}</th>
             ))}
           </tr>
         </thead>
@@ -611,7 +611,7 @@ function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
           {rows.map((row, i) => (
             <tr key={i}>
               {row.map((cell, j) => (
-                <td key={j} className="border border-slate-700 px-3 py-2 align-top text-slate-400">{cell}</td>
+                <td key={j} className="border border-violet-100 px-3 py-2 align-top text-slate-600">{cell}</td>
               ))}
             </tr>
           ))}
@@ -641,12 +641,12 @@ function TOC() {
     ["s17", "Acknowledgment"],
   ];
   return (
-    <nav aria-label="Table of contents" className="my-8 rounded-xl border border-slate-700 bg-slate-800/60 p-5">
-      <p className="font-semibold text-white mb-2">Contents</p>
-      <ol className="list-decimal list-outside pl-5 text-slate-300 space-y-1">
+    <nav aria-label="Table of contents" className="my-8 rounded-xl border border-violet-200 bg-violet-50 p-5">
+      <p className="font-semibold text-violet-900 mb-2">Contents</p>
+      <ol className="list-decimal list-outside pl-5 text-slate-700 space-y-1">
         {items.map(([id, label]) => (
           <li key={id}>
-            <a href={`#${id}`} className="hover:text-orange-400">{label}</a>
+            <a href={`#${id}`} className="hover:text-violet-900">{label}</a>
           </li>
         ))}
       </ol>

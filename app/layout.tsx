@@ -50,7 +50,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="bg-slate-900 min-h-screen antialiased">
+      <body className="bg-slate-50 text-slate-900 min-h-screen antialiased">
         <Navbar />
         {children}
         <Footer />

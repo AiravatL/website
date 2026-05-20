@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="relative min-h-screen w-full bg-slate-900 px-4 pt-32 pb-24">
+    <main className="relative min-h-screen w-full bg-gradient-to-br from-violet-50 via-white to-violet-100 px-4 pt-32 pb-24">
       <div className="mx-auto max-w-5xl">
         <ContactCard
           title="Get in Touch with AiravatL"

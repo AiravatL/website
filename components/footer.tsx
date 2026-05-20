@@ -15,11 +15,11 @@ const socialIcons = [Twitter, Facebook, Instagram, Linkedin];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-700 bg-black relative overflow-hidden">
+    <footer className="border-t border-violet-900 bg-[#2e1065] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           <div className="lg:col-span-2 flex flex-col">
-            <p className="text-slate-300 mb-6 leading-relaxed text-center">
+            <p className="text-violet-100 mb-6 leading-relaxed text-center">
               Airavatl is a leading logistics company providing comprehensive supply
               chain solutions across India.
             </p>
@@ -29,7 +29,7 @@ export default function Footer() {
                   key={index}
                   href="#"
                   whileHover={{ scale: 1.1, y: -2 }}
-                  className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300"
+                  className="w-10 h-10 bg-violet-900/60 rounded-full flex items-center justify-center text-violet-100 hover:text-white hover:bg-violet-800 transition-all duration-300"
                   aria-label="social"
                 >
                   <Icon size={18} />
@@ -44,7 +44,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    <a href="#" className="text-violet-200 hover:text-white transition-colors text-sm">
                       {link}
                     </a>
                   </li>
@@ -54,22 +54,22 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-slate-700 pt-8">
+        <div className="border-t border-violet-900 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
-              <div className="flex items-center space-x-2 text-slate-400">
+              <div className="flex items-center space-x-2 text-violet-200">
                 <Globe size={16} />
-                <select className="bg-transparent text-slate-400 text-sm focus:outline-none" aria-label="Language">
-                  <option>English</option>
-                  <option>Español</option>
-                  <option>Français</option>
-                  <option>Deutsch</option>
+                <select className="bg-transparent text-violet-200 text-sm focus:outline-none" aria-label="Language">
+                  <option className="text-slate-900">English</option>
+                  <option className="text-slate-900">Español</option>
+                  <option className="text-slate-900">Français</option>
+                  <option className="text-slate-900">Deutsch</option>
                 </select>
               </div>
-              <div className="text-slate-400 text-sm">© {new Date().getFullYear()} AiravatL Logistics</div>
+              <div className="text-violet-200 text-sm">© {new Date().getFullYear()} AiravatL Logistics</div>
             </div>
 
-            <div className="flex items-center space-x-6 text-slate-400 text-sm">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-violet-200 text-sm">
               <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
               </Link>

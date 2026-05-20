@@ -12,7 +12,6 @@ type Side = {
   label: string;
   title: string;
   description: string;
-  colors: { gradient: string; glow: string; ring: string; progressBar: string };
   stats: { connectionStatus: string; vehicleAvailability: number };
   features: Feature[];
 };
@@ -24,7 +23,6 @@ const PRODUCT_DATA: Record<SideKey, Side> = {
     title: "Airavat Driver App",
     description:
       "Drive with Airavat and earn on your schedule. Get instant ride requests, real-time navigation, and seamless earnings tracking all in one app.",
-    colors: { gradient: "from-slate-400 to-slate-600", glow: "bg-slate-400", ring: "border-l-slate-400/50", progressBar: "bg-slate-400" },
     stats: { connectionStatus: "Active", vehicleAvailability: 82 },
     features: [
       { label: "Daily Earnings", value: 95, icon: Banknote },
@@ -37,7 +35,6 @@ const PRODUCT_DATA: Record<SideKey, Side> = {
     title: "Airavat Consigner",
     description:
       "Ship your packages with ease using Airavat Consigner. Track shipments in real-time, manage deliveries, and connect with reliable drivers instantly.",
-    colors: { gradient: "from-emerald-600 to-teal-900", glow: "bg-emerald-500", ring: "border-r-emerald-500/50", progressBar: "bg-emerald-500" },
     stats: { connectionStatus: "Active", vehicleAvailability: 74 },
     features: [
       { label: "Delivery Success", value: 96, icon: Package },
@@ -71,9 +68,9 @@ function ProductVisual({ isLeft }: { isLeft: boolean }) {
           rel="noopener noreferrer"
           className={`flex items-center gap-2 text-xs uppercase tracking-widest ${
             isLeft
-              ? "text-slate-100 bg-slate-800/80 border-slate-600/30 hover:bg-slate-700/90"
-              : "text-emerald-100 bg-emerald-950/80 border-emerald-400/30 hover:bg-emerald-900/90"
-          } px-5 py-3 rounded-full border backdrop-blur transition-colors cursor-pointer shadow-lg`}
+              ? "text-white bg-violet-900 hover:bg-violet-800 border-violet-900"
+              : "text-violet-900 bg-white border-violet-300 hover:bg-violet-50"
+          } px-5 py-3 rounded-full border transition-colors cursor-pointer shadow-sm`}
         >
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
@@ -90,16 +87,18 @@ function ProductDetails({ data, isLeft }: { data: Side; isLeft: boolean }) {
   const flexDirClass = isLeft ? "flex-row" : "flex-row-reverse";
   const barPositionClass = isLeft ? "left-0" : "right-0";
 
-  const labelColor = isLeft ? "text-slate-300" : "text-emerald-300";
-  const titleGradient = isLeft ? "from-white to-slate-200" : "from-white to-emerald-200";
-  const descColor = isLeft ? "text-slate-100/80" : "text-emerald-100/80";
-  const cardBg = isLeft ? "bg-slate-800/40" : "bg-emerald-950/40";
-  const cardBorder = isLeft ? "border-slate-700/20" : "border-emerald-400/20";
-  const featureText = isLeft ? "text-slate-100" : "text-emerald-100";
-  const featureTextMuted = isLeft ? "text-slate-300/70" : "text-emerald-200/70";
-  const progressBg = isLeft ? "bg-slate-700/50" : "bg-emerald-900/50";
-  const buttonText = isLeft ? "text-slate-300 hover:text-white" : "text-emerald-200 hover:text-white";
-  const batteryColor = isLeft ? "text-slate-300/70" : "text-emerald-200/70";
+  // Both sides stay within the violet brand; left = deeper, right = lighter.
+  const labelColor = isLeft ? "text-violet-700" : "text-violet-500";
+  const titleColor = isLeft ? "text-violet-900" : "text-violet-700";
+  const descColor = "text-slate-600";
+  const cardBg = "bg-white";
+  const cardBorder = isLeft ? "border-violet-200" : "border-violet-100";
+  const featureText = "text-slate-900";
+  const featureTextMuted = "text-slate-500";
+  const progressBg = "bg-violet-100";
+  const progressBar = isLeft ? "bg-violet-900" : "bg-violet-500";
+  const buttonText = "text-violet-700 hover:text-violet-900";
+  const batteryColor = "text-slate-600";
 
   return (
     <motion.div variants={containerVariants} initial="hidden" animate="visible" exit="exit" className={`flex flex-col ${alignClass}`}>
@@ -108,7 +107,7 @@ function ProductDetails({ data, isLeft }: { data: Side; isLeft: boolean }) {
       </motion.h2>
       <motion.h1
         variants={itemVariants}
-        className={`text-5xl md:text-6xl font-light tracking-tight mb-2 text-transparent bg-clip-text bg-gradient-to-b ${titleGradient}`}
+        className={`text-5xl md:text-6xl font-light tracking-tight mb-2 ${titleColor}`}
       >
         {data.title}
       </motion.h1>
@@ -118,7 +117,7 @@ function ProductDetails({ data, isLeft }: { data: Side; isLeft: boolean }) {
 
       <motion.div
         variants={itemVariants}
-        className={`w-full space-y-6 ${cardBg} p-6 rounded-2xl border ${cardBorder} backdrop-blur-sm`}
+        className={`w-full space-y-6 ${cardBg} p-6 rounded-2xl border ${cardBorder} shadow-sm`}
       >
         {data.features.map((feature, idx) => (
           <div key={feature.label} className="group">
@@ -133,7 +132,7 @@ function ProductDetails({ data, isLeft }: { data: Side; isLeft: boolean }) {
                 initial={{ width: 0 }}
                 animate={{ width: `${feature.value}%` }}
                 transition={{ duration: 1, delay: 0.4 + idx * 0.15 }}
-                className={`absolute top-0 bottom-0 ${barPositionClass} ${data.colors.progressBar} opacity-80`}
+                className={`absolute top-0 bottom-0 ${barPositionClass} ${progressBar}`}
               />
             </div>
           </div>
@@ -161,9 +160,7 @@ function Switcher({ activeId, onToggle, isLeft }: { activeId: SideKey; onToggle:
     <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
       <motion.div
         layout
-        className={`flex items-center gap-1 p-1.5 rounded-full backdrop-blur-2xl border shadow-[0_20px_60px_rgba(0,0,0,0.3)] ring-1 ${
-          isLeft ? "bg-slate-800/60 border-slate-600/20 ring-slate-500/10" : "bg-emerald-950/60 border-emerald-400/20 ring-emerald-500/10"
-        }`}
+        className="flex items-center gap-1 p-1.5 rounded-full bg-white border border-violet-200 shadow-lg ring-1 ring-violet-100"
       >
         {options.map((opt) => (
           <motion.button
@@ -175,15 +172,13 @@ function Switcher({ activeId, onToggle, isLeft }: { activeId: SideKey; onToggle:
             {activeId === opt.id && (
               <motion.div
                 layoutId="island-surface"
-                className={`absolute inset-0 rounded-full shadow-inner ${
-                  isLeft ? "bg-gradient-to-b from-purple-400/20 to-purple-500/10" : "bg-gradient-to-b from-emerald-400/20 to-emerald-500/10"
-                }`}
+                className={`absolute inset-0 rounded-full ${isLeft ? "bg-violet-900" : "bg-violet-500"}`}
                 transition={{ type: "spring", stiffness: 220, damping: 22 }}
               />
             )}
             <span
               className={`relative z-10 transition-colors duration-300 ${
-                activeId === opt.id ? "text-white" : isLeft ? "text-purple-200/60 hover:text-purple-100" : "text-emerald-200/60 hover:text-emerald-100"
+                activeId === opt.id ? "text-white" : "text-violet-700 hover:text-violet-900"
               }`}
             >
               {opt.label}
@@ -201,7 +196,7 @@ export default function MobileApps() {
   const isLeft = activeSide === "left";
 
   return (
-    <div id="solutions" className="relative min-h-screen w-full overflow-hidden selection:bg-zinc-800 flex flex-col items-center justify-center transition-colors duration-700 bg-black text-white">
+    <div id="solutions" className="relative min-h-screen w-full overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br from-violet-50 via-white to-violet-100 text-slate-900">
       <main className="relative z-10 w-full px-6 py-8 flex flex-col justify-center max-w-7xl mx-auto">
         <motion.div
           layout

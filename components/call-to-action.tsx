@@ -10,7 +10,7 @@ import { Textarea } from "./ui/textarea";
 
 export default function CallToAction() {
   return (
-    <section className="py-32 bg-black relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-br from-violet-50 via-white to-violet-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

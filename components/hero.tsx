@@ -59,13 +59,6 @@ export default function Hero() {
           >
             Airavatl for Enterprise
           </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="border border-slate-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-slate-800 transition-colors"
-          >
-            Track Shipment
-          </motion.button>
         </motion.div>
       </div>
     </section>

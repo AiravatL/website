@@ -2,43 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  AiravatL brand palette (Tailwind violet scale + neutrals)
+  Confirmed against the consigner app theme:
+    #4C1D95 (violet-900)  primary
+    #DDD6FE (violet-200)  accent
+    #EDE9FE (violet-100)  tint
+    #F5F3FF (violet-50)   surface highlight
+  Surface backgrounds: white / slate-50 / slate-100
+  Footer: violet-950 deep purple
+  No orange anywhere.
+*/
+
 @layer base {
   :root {
-    /* Shadcn-style theme tokens, tuned for the existing dark site palette */
-    --background: 222 47% 11%;          /* slate-900 */
-    --foreground: 210 40% 96%;          /* slate-100 */
+    --brand-primary: 76 29 149;          /* #4C1D95 violet-900 */
+    --brand-primary-hover: 91 33 182;    /* violet-800 */
+    --brand-accent: 221 214 254;         /* #DDD6FE violet-200 */
+    --brand-tint: 237 233 254;           /* #EDE9FE violet-100 */
+    --brand-tint-soft: 245 243 255;      /* #F5F3FF violet-50 */
+    --brand-surface: 255 255 255;        /* white */
+    --brand-surface-cool: 248 250 252;   /* slate-50 */
+    --brand-text: 17 24 39;              /* slate-900 */
+    --brand-text-muted: 100 116 139;     /* slate-500 */
+    --brand-border: 226 232 240;         /* slate-200 */
+    --brand-footer: 46 16 101;           /* violet-950 */
 
-    --card: 217 33% 17%;                /* slate-800 */
-    --card-foreground: 210 40% 96%;
-
-    --muted: 215 28% 17%;
-    --muted-foreground: 215 20% 65%;
-
-    --border: 215 28% 25%;              /* slate-700ish */
-    --input: 215 28% 25%;
-    --ring: 24 95% 53%;                 /* orange-500 for focus rings */
-
-    --primary: 263 70% 35%;             /* AiravatL purple #4c1d95 */
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 215 28% 25%;
-    --secondary-foreground: 210 40% 96%;
-
-    --accent: 24 95% 60%;               /* orange */
-    --accent-foreground: 0 0% 0%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 96%;
+    /* shadcn tokens routed to brand */
+    --background: 255 255 255;
+    --foreground: 17 24 39;
+    --card: 255 255 255;
+    --card-foreground: 17 24 39;
+    --muted: 245 243 255;                 /* violet-50 */
+    --muted-foreground: 100 116 139;
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 76 29 149;
+    --primary: 76 29 149;
+    --primary-foreground: 255 255 255;
+    --secondary: 237 233 254;             /* violet-100 */
+    --secondary-foreground: 76 29 149;
+    --accent: 221 214 254;                /* violet-200 */
+    --accent-foreground: 76 29 149;
+    --destructive: 220 38 38;
+    --destructive-foreground: 255 255 255;
   }
-}
 
-@layer base {
+  html { scroll-behavior: smooth; }
   body {
-    @apply bg-slate-900 text-slate-100;
+    background: rgb(var(--brand-surface));
+    color: rgb(var(--brand-text));
+    -webkit-font-smoothing: antialiased;
   }
 }
 
-/* NeonOrbs animations (moved out of styled-jsx so they work everywhere) */
+/* NeonOrbs animations (Hero only) */
 .beam-container {
   position: absolute;
   inset: -2px;

@@ -53,20 +53,20 @@ function TestimonialsColumn({
                   boxShadow: "0 25px 50px -12px rgba(0,0,0,0.12), 0 10px 10px -5px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.05)",
                   transition: { type: "spring", stiffness: 400, damping: 17 },
                 }}
-                className="p-10 rounded-3xl border border-slate-700/50 shadow-lg shadow-black/5 max-w-xs w-full bg-slate-800/50 transition-all duration-300 cursor-default select-none group focus:outline-none focus:ring-2 focus:ring-orange-500/30"
+                className="p-10 rounded-3xl border border-violet-100 shadow-lg shadow-violet-900/5 max-w-xs w-full bg-white transition-all duration-300 cursor-default select-none group focus:outline-none focus:ring-2 focus:ring-violet-500/30"
               >
                 <blockquote className="m-0 p-0">
-                  <p className="text-slate-400 leading-relaxed font-normal m-0">{text}</p>
+                  <p className="text-slate-600 leading-relaxed font-normal m-0">{text}</p>
                   <footer className="flex items-center gap-3 mt-6">
                     <Image
                       src={image}
                       alt={`${name} avatar`}
                       width={40}
                       height={40}
-                      className="h-10 w-10 rounded-full object-contain bg-white p-1 ring-2 ring-slate-700 group-hover:ring-orange-500/30 transition-all duration-300"
+                      className="h-10 w-10 rounded-full object-contain bg-violet-50 p-1 ring-2 ring-violet-100 group-hover:ring-violet-300 transition-all duration-300"
                     />
                     <div className="flex flex-col">
-                      <cite className="font-semibold not-italic tracking-tight leading-5 text-white">{name}</cite>
+                      <cite className="font-semibold not-italic tracking-tight leading-5 text-slate-900">{name}</cite>
                       <span className="text-sm leading-5 tracking-tight text-slate-500 mt-0.5">{role}</span>
                     </div>
                   </footer>
@@ -82,7 +82,7 @@ function TestimonialsColumn({
 
 export default function Testimonials() {
   return (
-    <div id="about" className="w-full bg-black flex flex-col justify-center relative py-24">
+    <div id="about" className="w-full bg-white flex flex-col justify-center relative py-24">
       <section aria-labelledby="testimonials-heading" className="bg-transparent py-24 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 50, rotate: -2 }}
@@ -93,14 +93,14 @@ export default function Testimonials() {
         >
           <div className="flex flex-col items-center justify-center max-w-[540px] mx-auto mb-16">
             <div className="flex justify-center">
-              <div className="border border-slate-700 py-1 px-4 rounded-full text-xs font-semibold tracking-wide uppercase text-slate-400 bg-slate-800/50">
+              <div className="border border-violet-200 py-1 px-4 rounded-full text-xs font-semibold tracking-wide uppercase text-violet-700 bg-violet-50">
                 Testimonials
               </div>
             </div>
-            <h2 id="testimonials-heading" className="text-4xl md:text-5xl font-extrabold tracking-tight mt-6 text-center text-white">
+            <h2 id="testimonials-heading" className="text-4xl md:text-5xl font-extrabold tracking-tight mt-6 text-center text-slate-900">
               What our clients say
             </h2>
-            <p className="text-center mt-5 text-slate-400 text-lg leading-relaxed max-w-sm">
+            <p className="text-center mt-5 text-slate-600 text-lg leading-relaxed max-w-sm">
               Discover how leading businesses trust AiravatL for their logistics needs.
             </p>
           </div>
