@@ -51,14 +51,17 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
         >
-          <motion.button
+          <motion.a
+            href="https://enterprise.airavatl.in/"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="text-white px-8 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-all"
             style={{ backgroundColor: "#4c1d95" }}
           >
             Airavatl for Enterprise
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

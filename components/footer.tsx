@@ -42,13 +42,21 @@ export default function Footer() {
             <div key={category}>
               <h3 className="text-white font-semibold mb-4">{category}</h3>
               <ul className="space-y-3">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-violet-200 hover:text-white transition-colors text-sm">
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {links.map((link) => {
+                  const isEnterprise = link === "Airavatl Enterprise";
+                  return (
+                    <li key={link}>
+                      <a
+                        href={isEnterprise ? "https://enterprise.airavatl.in/" : "#"}
+                        target={isEnterprise ? "_blank" : undefined}
+                        rel={isEnterprise ? "noopener noreferrer" : undefined}
+                        className="text-violet-200 hover:text-white transition-colors text-sm"
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}

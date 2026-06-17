@@ -222,31 +222,31 @@ export default function DeleteAccountFlow() {
         </div>
       </section>
 
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-violet-50/60">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center mb-12">
-            <h3 className="text-3xl font-semibold text-white mb-4">Before you go&hellip;</h3>
-            <p className="text-slate-400 max-w-2xl mx-auto">Consider these alternatives that might address your concerns without deleting your account.</p>
+            <h3 className="text-3xl font-semibold text-slate-900 mb-4">Before you go&hellip;</h3>
+            <p className="text-slate-600 max-w-2xl mx-auto">Consider these alternatives that might address your concerns without deleting your account.</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="bg-white border border-violet-100 shadow-sm rounded-3xl p-8">
-              <h4 className="text-xl font-semibold text-white mb-4">Temporarily deactivate</h4>
-              <p className="text-slate-400 mb-6">Take a break without losing your data. You can reactivate your account anytime within 90 days.</p>
-              <button className="bg-orange-500 text-white px-6 py-3 rounded-full font-medium hover:bg-orange-400 transition-colors">
+              <h4 className="text-xl font-semibold text-slate-900 mb-4">Temporarily deactivate</h4>
+              <p className="text-slate-600 mb-6">Take a break without losing your data. You can reactivate your account anytime within 90 days.</p>
+              <button className="bg-violet-900 text-white px-6 py-3 rounded-full font-medium hover:bg-violet-800 transition-colors">
                 Deactivate Instead
               </button>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="bg-white border border-violet-100 shadow-sm rounded-3xl p-8">
-              <h4 className="text-xl font-semibold text-white mb-4">Talk to our team</h4>
-              <p className="text-slate-400 mb-6">Let us help resolve any issues you&rsquo;re experiencing. Our support team is here to help.</p>
+              <h4 className="text-xl font-semibold text-slate-900 mb-4">Talk to our team</h4>
+              <p className="text-slate-600 mb-6">Let us help resolve any issues you&rsquo;re experiencing. Our support team is here to help.</p>
               <div className="flex flex-col space-y-3">
-                <a href="mailto:support@airavatl.com" className="flex items-center space-x-3 text-orange-400 hover:text-orange-300 transition-colors">
+                <a href="mailto:support@airavatl.com" className="flex items-center space-x-3 text-violet-700 hover:text-violet-900 transition-colors">
                   <Mail size={16} />
                   <span>support@airavatl.com</span>
                 </a>
-                <a href="tel:+917099220645" className="flex items-center space-x-3 text-orange-400 hover:text-orange-300 transition-colors">
+                <a href="tel:+917099220645" className="flex items-center space-x-3 text-violet-700 hover:text-violet-900 transition-colors">
                   <Phone size={16} />
                   <span>+91-7099220645</span>
                 </a>
