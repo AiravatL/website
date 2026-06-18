@@ -9,15 +9,15 @@ type Testimonial = { text: string; image: string; name: string; role: string };
 const PLACEHOLDER = "/images/client-logos/placeholder-logo.svg";
 
 const testimonials: Testimonial[] = [
-  { text: "AiravatL revolutionized our logistics operations with their efficient supply chain solutions. Their real-time tracking keeps us informed at every step.", image: PLACEHOLDER, name: "Rajesh Kumar", role: "Tata AutoComp" },
-  { text: "The seamless delivery service and competitive pricing have made AiravatL our preferred logistics partner for all furniture shipments.", image: "/images/client-logos/Nilkamal furniture.png", name: "Priya Sharma", role: "Nilkamal Furniture" },
+  { text: "Airavatl revolutionized our logistics operations with their efficient supply chain solutions. Their real-time tracking keeps us informed at every step.", image: PLACEHOLDER, name: "Rajesh Kumar", role: "Tata AutoComp" },
+  { text: "The seamless delivery service and competitive pricing have made Airavatl our preferred logistics partner for all furniture shipments.", image: "/images/client-logos/Nilkamal furniture.png", name: "Priya Sharma", role: "Nilkamal Furniture" },
   { text: "Their expertise in handling industrial cargo and timely deliveries across North-East India is exceptional. Highly recommend their services.", image: "/images/client-logos/Pioneer carbide.png", name: "Amit Patel", role: "Pioneer Carbide" },
-  { text: "AiravatL's intelligent routing system has significantly reduced our shipping costs while maintaining excellent service quality.", image: PLACEHOLDER, name: "Sneha Reddy", role: "Power Maker" },
-  { text: "The transparency and reliability of AiravatL's logistics services have transformed how we manage our supply chain operations.", image: PLACEHOLDER, name: "Vikram Singh", role: "Rosmerta Technologies" },
-  { text: "From documentation to delivery, AiravatL handles everything professionally. Their customer support team is always responsive and helpful.", image: "/images/client-logos/Galeno mettalics.jpg", name: "Anita Desai", role: "Galeno Metallics" },
-  { text: "We've seen remarkable improvement in our delivery timelines since partnering with AiravatL. Their network coverage is impressive.", image: "/images/client-logos/HomeTown_Logo.webp", name: "Karan Mehta", role: "HomeTown" },
-  { text: "AiravatL's customized logistics solutions perfectly fit our business needs. Their team understands the unique challenges of our industry.", image: "/images/client-logos/jk tile & machinery.png", name: "Sunita Rao", role: "JK Tile & Machinery" },
-  { text: "Exceptional service quality and competitive rates. AiravatL has become an integral part of our business operations.", image: "/images/client-logos/inter dominion.webp", name: "Rahul Gupta", role: "Inter Dominion" },
+  { text: "Airavatl's intelligent routing system has significantly reduced our shipping costs while maintaining excellent service quality.", image: PLACEHOLDER, name: "Sneha Reddy", role: "Power Maker" },
+  { text: "The transparency and reliability of Airavatl's logistics services have transformed how we manage our supply chain operations.", image: PLACEHOLDER, name: "Vikram Singh", role: "Rosmerta Technologies" },
+  { text: "From documentation to delivery, Airavatl handles everything professionally. Their customer support team is always responsive and helpful.", image: "/images/client-logos/Galeno mettalics.jpg", name: "Anita Desai", role: "Galeno Metallics" },
+  { text: "We've seen remarkable improvement in our delivery timelines since partnering with Airavatl. Their network coverage is impressive.", image: "/images/client-logos/HomeTown_Logo.webp", name: "Karan Mehta", role: "HomeTown" },
+  { text: "Airavatl's customized logistics solutions perfectly fit our business needs. Their team understands the unique challenges of our industry.", image: "/images/client-logos/jk tile & machinery.png", name: "Sunita Rao", role: "JK Tile & Machinery" },
+  { text: "Exceptional service quality and competitive rates. Airavatl has become an integral part of our business operations.", image: "/images/client-logos/inter dominion.webp", name: "Rahul Gupta", role: "Inter Dominion" },
 ];
 
 const firstColumn = testimonials.slice(0, 3);
@@ -97,11 +97,11 @@ export default function Testimonials() {
                 Testimonials
               </div>
             </div>
-            <h2 id="testimonials-heading" className="text-4xl md:text-5xl font-extrabold tracking-tight mt-6 text-center text-slate-900">
+            <h2 id="testimonials-heading" className="text-5xl md:text-6xl font-light leading-tight mt-6 text-center text-slate-900">
               What our clients say
             </h2>
             <p className="text-center mt-5 text-slate-600 text-lg leading-relaxed max-w-sm">
-              Discover how leading businesses trust AiravatL for their logistics needs.
+              Discover how leading businesses trust Airavatl for their logistics needs.
             </p>
           </div>
 

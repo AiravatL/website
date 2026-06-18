@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AiravatL Partner App — Privacy Policy",
+  title: "Airavatl Partner App — Privacy Policy",
   description:
-    "Privacy Policy for the AiravatL Partner mobile application. How BSP Sparton Private Limited collects, uses, shares, and protects personal data of Pilots, Transporters, and Employee Drivers, in compliance with the DPDP Act, 2023.",
+    "Privacy Policy for the Airavatl Partner mobile application. How BSP Sparton Private Limited collects, uses, shares, and protects personal data of Pilots, Transporters, and Employee Drivers, in compliance with the DPDP Act, 2023.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -13,12 +13,12 @@ export default function PrivacyPage() {
     <main className="bg-white min-h-screen text-slate-700">
       <header className="pt-32 pb-12 text-center bg-gradient-to-br from-violet-50 via-white to-violet-100 border-b border-violet-100">
         <div className="max-w-3xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.2em] text-violet-700 mb-3 font-semibold">AiravatL Partner</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-violet-700 mb-3 font-semibold">Airavatl Partner</div>
           <h1 className="text-4xl md:text-5xl font-light text-slate-900">
             Privacy <span className="font-medium text-violet-900">Policy</span>
           </h1>
           <p className="mt-4 text-slate-600">
-            For Pilots, Transporters, and Employee Drivers using the AiravatL Partner mobile application.
+            For Pilots, Transporters, and Employee Drivers using the Airavatl Partner mobile application.
           </p>
           <p className="mt-3 text-sm text-slate-500">Effective Date: 20 April 2026 &nbsp;|&nbsp; Version 1.3</p>
         </div>
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
 
         <Callout>
           <strong className="text-violet-900">AT A GLANCE:</strong> This Privacy Policy explains what personal data
-          BSP Sparton Private Limited collects when you use the AiravatL Partner App, why we collect it, who we
+          BSP Sparton Private Limited collects when you use the Airavatl Partner App, why we collect it, who we
           share it with, and what rights you have under Indian law. In short: we collect phone number, KYC documents,
           vehicle and banking details, trip and location data, and app-usage information to run the marketplace,
           process payments, verify identity, and keep our users safe. We do not sell your personal data to advertisers.
@@ -47,14 +47,14 @@ export default function PrivacyPage() {
           This Privacy Policy (the &ldquo;Policy&rdquo;) is issued by <strong className="text-slate-900">BSP Sparton Private Limited</strong>,
           a company incorporated under the Companies Act, 2013 (CIN: U62020AS2024PTC026345), having its registered office at
           1B, 1st Floor, Saroj Estate, K.C. Patowary Road, Ulubari, Guwahati 781007, Assam, India (&ldquo;BSP Sparton&rdquo;,
-          &ldquo;AiravatL&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;). AiravatL is the operator of the
-          AiravatL Partner mobile application (the &ldquo;Partner App&rdquo;).
+          &ldquo;Airavatl&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;). Airavatl is the operator of the
+          Airavatl Partner mobile application (the &ldquo;Partner App&rdquo;).
         </P>
         <H3>1.2 Scope of this Policy</H3>
         <P>
           This Policy applies to personal data we collect when you (a) download, install, or use the Partner App;
           (b) register as a Pilot, Transporter, or Employee Driver (each a &ldquo;Partner&rdquo;); (c) interact with
-          AiravatL support channels; or (d) otherwise engage with our services. This Policy does not apply to the AiravatL
+          Airavatl support channels; or (d) otherwise engage with our services. This Policy does not apply to the Airavatl
           Consignor application, which is governed by a separate privacy policy.
         </P>
         <H3>1.3 Our role under the DPDP Act, 2023</H3>
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
         </P>
         <H3>1.5 Relationship with other documents</H3>
         <P>
-          This Policy forms an integral part of the AiravatL Partner App Terms of Service (the &ldquo;Terms&rdquo;).
+          This Policy forms an integral part of the Airavatl Partner App Terms of Service (the &ldquo;Terms&rdquo;).
           Capitalised terms used but not defined in this Policy have the meanings given to them in the Terms. In case of
           any inconsistency between this Policy and the Terms concerning the processing of personal data, this Policy
           shall prevail.
@@ -207,7 +207,7 @@ export default function PrivacyPage() {
           ["Regulatory, tax, legal, and audit compliance", "KYC and transaction data, communications, records of consent", "Legal obligation"],
           ["Service improvement, product analytics, and error diagnostics", "Usage events, crash logs, performance metrics (de-identified where feasible)", "Consent"],
           ["Transactional communications (SMS, push, in-app, email)", "Contact data, Trip data", "Performance of Terms"],
-          ["Marketing and promotional communications about AiravatL services", "Contact data, role, approximate location", "Consent (you may opt out at any time)"],
+          ["Marketing and promotional communications about Airavatl services", "Contact data, role, approximate location", "Consent (you may opt out at any time)"],
         ]} />
         <P>
           We do not use your personal data for purposes materially different from those listed above without first
@@ -414,14 +414,14 @@ export default function PrivacyPage() {
         <UL>
           <li>you will lose access to the Partner App, your Trip history, ratings, and earnings ledger;</li>
           <li>you will not be able to restore your Account; if you wish to use the Partner App again, you must register afresh and complete KYC again;</li>
-          <li>any pending payouts that have not been withdrawn may be forfeited, unless you arrange settlement with AiravatL Support prior to deletion;</li>
+          <li>any pending payouts that have not been withdrawn may be forfeited, unless you arrange settlement with Airavatl Support prior to deletion;</li>
           <li>legally-retained records (per Section 8.2) will not be part of your re-registered Account but may be referenced if fraud, dispute, or regulatory matters arise.</li>
         </UL>
         <H4>9.3.4 Where to track account deletion</H4>
         <P>
           For the latest instructions and to initiate a deletion request, you may also visit the{" "}
           <Link className="text-violet-900 hover:underline" href="/delete-account">account-deletion page</Link>{" "}
-          linked from the AiravatL website.
+          linked from the Airavatl website.
         </P>
 
         <H3>9.4 Right to withdraw consent</H3>
@@ -524,14 +524,14 @@ export default function PrivacyPage() {
         </P>
         <P>
           Marketing or promotional communications are sent only with your consent. As at the effective date of this
-          Policy, AiravatL does not send any marketing or promotional communications to Partners.
+          Policy, Airavatl does not send any marketing or promotional communications to Partners.
         </P>
 
         <H2 id="s15">15. Employee Drivers and Transporters</H2>
         <H3>15.1 Data of Employee Drivers</H3>
         <P>
-          If you are an Employee Driver, your data is processed both by AiravatL (for the operation of the Partner App)
-          and by your Transporter. AiravatL&rsquo;s processing of your data is governed by this Policy. Additional
+          If you are an Employee Driver, your data is processed both by Airavatl (for the operation of the Partner App)
+          and by your Transporter. Airavatl&rsquo;s processing of your data is governed by this Policy. Additional
           processing by your Transporter is the Transporter&rsquo;s responsibility.
         </P>
         <H3>15.2 Transporter access and limits</H3>
@@ -542,7 +542,7 @@ export default function PrivacyPage() {
         </P>
         <H3>15.3 Transfer between Transporters</H3>
         <P>
-          If you move from one Transporter to another, your Trip and rating history is retained on AiravatL, but
+          If you move from one Transporter to another, your Trip and rating history is retained on Airavatl, but
           visibility to the previous Transporter ceases upon removal from their fleet.
         </P>
 

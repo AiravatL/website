@@ -6,8 +6,8 @@ import Footer from "@/components/footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.airavatl.com"),
   title: {
-    default: "AiravatL — Transforming Logistics Across North-East India",
-    template: "%s — AiravatL",
+    default: "Airavatl — Transforming Logistics Across North-East India",
+    template: "%s — Airavatl",
   },
   description:
     "Intelligent routing, real-time tracking, and best-in-market freight pricing across North-East India.",
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     "Sikkim logistics",
   ],
   openGraph: {
-    title: "AiravatL — Logistics Across North-East India",
+    title: "Airavatl — Logistics Across North-East India",
     description:
       "Intelligent routing, real-time tracking, and best-in-market freight pricing.",
     url: "https://www.airavatl.com",
-    siteName: "AiravatL",
+    siteName: "Airavatl",
     images: ["/logo.png"],
     type: "website",
   },

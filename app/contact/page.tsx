@@ -7,8 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 export const metadata: Metadata = {
-  title: "Contact — AiravatL",
-  description: "Get in touch with the AiravatL team for logistics quotes, partnership enquiries, and support.",
+  title: "Contact — Airavatl",
+  description: "Get in touch with the Airavatl team for logistics quotes, partnership enquiries, and support.",
   alternates: { canonical: "/contact" },
 };
 
@@ -17,10 +17,10 @@ export default function ContactPage() {
     <main className="relative min-h-screen w-full bg-gradient-to-br from-violet-50 via-white to-violet-100 px-4 pt-32 pb-24">
       <div className="mx-auto max-w-5xl">
         <ContactCard
-          title="Get in Touch with AiravatL"
+          title="Get in Touch with Airavatl"
           description="Have questions about our logistics services? Need a quote for your shipment? Fill out the form and our team will respond within 1 business day."
           contactInfo={[
-            { icon: MailIcon, label: "Email", value: "hello@airavatl.com" },
+            { icon: MailIcon, label: "Email", value: "airavatlogistic@gmail.com" },
             { icon: PhoneIcon, label: "Phone", value: "+91 70992 20645" },
             { icon: MapPinIcon, label: "Address", value: "North-East India", className: "col-span-2" },
           ]}
