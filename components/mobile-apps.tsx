@@ -56,6 +56,10 @@ const itemVariants: Variants = {
 };
 
 function ProductVisual({ isLeft }: { isLeft: boolean }) {
+  // Left side = Driver / Vehicle Partner App; right side = Customer / Consigner App.
+  const appUrl = isLeft
+    ? "https://play.google.com/store/apps/details?id=com.airavatl.partners"
+    : "https://play.google.com/store/apps/details?id=com.airavatl.app";
   return (
     <motion.div layout="position" className="relative group shrink-0 flex flex-col items-center">
       <div className="relative">
@@ -63,7 +67,7 @@ function ProductVisual({ isLeft }: { isLeft: boolean }) {
       </div>
       <motion.div layout="position" className="mt-8 whitespace-nowrap z-20">
         <a
-          href="https://play.google.com/store/apps/details?id=com.airavatl.app&pcampaignid=web_share"
+          href={appUrl}
           target="_blank"
           rel="noopener noreferrer"
           className={`flex items-center gap-2 text-xs uppercase tracking-widest ${
