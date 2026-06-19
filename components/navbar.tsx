@@ -91,7 +91,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-white px-6 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-all whitespace-nowrap"
+            className="text-white px-7 py-2.5 rounded-full text-base font-medium hover:opacity-90 transition-all whitespace-nowrap"
             style={{ backgroundColor: "#4c1d95" }}
           >
             Airavatl Enterprise
