@@ -18,6 +18,8 @@ type Platform = {
   description: string;
   /** Optional real logo — drop a file in /public and set this later. */
   logoSrc?: string;
+  /** Optional Google Play link — shows a "Download" button when present. */
+  href?: string;
 };
 
 const platforms: Platform[] = [
@@ -27,6 +29,7 @@ const platforms: Platform[] = [
     label: "Customer / Consigner App",
     description:
       "A customer-facing app where consigners and businesses can create transport requirements, manage bookings, and access logistics services digitally.",
+    href: "https://play.google.com/store/apps/details?id=com.airavatl.app",
   },
   {
     icon: Truck,
@@ -34,6 +37,7 @@ const platforms: Platform[] = [
     label: "Driver / Vehicle Partner App",
     description:
       "A partner app built for drivers and vehicle owners to receive logistics opportunities, participate in transport operations, and manage assigned work.",
+    href: "https://play.google.com/store/apps/details?id=com.airavatl.partners",
   },
   {
     icon: LayoutDashboard,
@@ -84,6 +88,18 @@ export default function EcosystemShowcase() {
           </span>
           <span className="text-slate-500">, {current.label}</span>
         </p>
+
+        {current.href ? (
+          <a
+            href={current.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ backgroundColor: "#4c1d95" }}
+            className="mt-6 inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-medium text-white shadow-sm transition-all hover:-translate-y-0.5 hover:opacity-90"
+          >
+            Download on Google Play
+          </a>
+        ) : null}
       </div>
 
       {/* Logo tabs — bottom */}
