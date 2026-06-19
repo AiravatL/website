@@ -8,8 +8,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <SolutionsPreview />
       <ClientsBar />
+      <SolutionsPreview />
       <ServicesPreview />
       <Testimonials />
     </>

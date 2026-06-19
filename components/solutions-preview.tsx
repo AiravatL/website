@@ -114,7 +114,7 @@ function CapabilityTile({ item }: { item: EcosystemItem }) {
         item.area
       )}
     >
-      <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-violet-50 transition-colors group-hover:bg-violet-100">
+      <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg">
         {item.logoSrc ? (
           <Image src={item.logoSrc} alt={item.title} fill sizes="40px" className="object-contain p-1" />
         ) : (
