@@ -85,14 +85,17 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
-          <a
+          <motion.a
             href="https://enterprise.airavatl.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-800 hover:text-slate-600 transition-colors text-sm whitespace-nowrap"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="text-white px-6 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-all whitespace-nowrap"
+            style={{ backgroundColor: "#4c1d95" }}
           >
             Airavatl Enterprise
-          </a>
+          </motion.a>
         </div>
 
         <button
@@ -114,7 +117,8 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
-            className="mt-1 px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm"
+            className="mt-2 text-center text-white px-4 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-all"
+            style={{ backgroundColor: "#4c1d95" }}
           >
             Airavatl Enterprise
           </a>
