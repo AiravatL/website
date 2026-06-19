@@ -85,9 +85,14 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
-          <button className="text-slate-800 hover:text-slate-600 transition-colors text-sm whitespace-nowrap">
-            Customer Portal
-          </button>
+          <a
+            href="https://enterprise.airavatl.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-800 hover:text-slate-600 transition-colors text-sm whitespace-nowrap"
+          >
+            Airavatl Enterprise
+          </a>
         </div>
 
         <button
@@ -104,9 +109,15 @@ export default function Navbar() {
           <Link href="/services" onClick={() => setIsOpen(false)} className="px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm">Services</Link>
           <Link href="/solutions" onClick={() => setIsOpen(false)} className="px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm">Solutions</Link>
           <a href="#about" onClick={() => setIsOpen(false)} className="px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm">About</a>
-          <button className="mt-1 px-4 py-2.5 rounded-xl text-left text-slate-800 hover:bg-violet-50 transition-colors text-sm">
-            Customer Portal
-          </button>
+          <a
+            href="https://enterprise.airavatl.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="mt-1 px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm"
+          >
+            Airavatl Enterprise
+          </a>
         </div>
       )}
     </motion.nav>
