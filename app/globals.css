@@ -54,6 +54,11 @@
     color: rgb(var(--brand-text));
     -webkit-font-smoothing: antialiased;
   }
+  /* All headings use Plus Jakarta Sans (ClickUp-style) */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
 }
 
 /* NeonOrbs animations (Hero only) */

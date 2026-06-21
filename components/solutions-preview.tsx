@@ -29,6 +29,8 @@ type EcosystemItem = {
   logoSrc?: string;
   /** Desktop (lg) grid placement. */
   area: string;
+  /** Overview page slug under /solutions/[slug] — makes the tile clickable. */
+  slug?: string;
 };
 
 // Desktop layout: 7 columns × 4 rows flat grid.
@@ -39,24 +41,28 @@ const mainProducts: EcosystemItem[] = [
     title: "Airavatl",
     label: "Customer / Consigner App",
     icon: Smartphone,
+    slug: "customer-app",
     area: "lg:col-start-3 lg:row-start-1 lg:col-span-2 lg:row-span-2",
   },
   {
     title: "Airavatl Partner",
     label: "Driver / Vehicle Partner App",
     icon: Truck,
+    slug: "partner",
     area: "lg:col-start-5 lg:row-start-1 lg:col-span-2 lg:row-span-2",
   },
   {
     title: "Airavatl Enterprise",
     label: "Customer Portal",
     icon: Building2,
+    slug: "enterprise",
     area: "lg:col-start-3 lg:row-start-3 lg:col-span-2 lg:row-span-2",
   },
   {
     title: "Airavatl Inroute",
     label: "SDMS Solution",
     icon: BarChart3,
+    slug: "inroute",
     area: "lg:col-start-5 lg:row-start-3 lg:col-span-2 lg:row-span-2",
   },
 ];
@@ -78,7 +84,8 @@ const capabilities: EcosystemItem[] = [
 function ProductTile({ item }: { item: EcosystemItem }) {
   const Icon = item.icon;
   return (
-    <div
+    <Link
+      href={item.slug ? `/solutions/${item.slug}` : "/solutions"}
       className={cn(
         "group flex min-h-[150px] flex-col items-center justify-center gap-3 bg-gradient-to-br from-violet-50 to-white p-6 text-center transition-colors duration-300 hover:from-violet-100",
         item.area
@@ -101,7 +108,7 @@ function ProductTile({ item }: { item: EcosystemItem }) {
           </p>
         ) : null}
       </div>
-    </div>
+    </Link>
   );
 }
 

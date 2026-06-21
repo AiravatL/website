@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Smartphone,
   Truck,
@@ -16,6 +17,8 @@ type Platform = {
   title: string;
   label: string;
   description: string;
+  /** Overview page slug under /solutions/[slug]. */
+  slug: string;
   /** Optional real logo — drop a file in /public and set this later. */
   logoSrc?: string;
   /** Optional Google Play link — shows a "Download" button when present. */
@@ -27,6 +30,7 @@ const platforms: Platform[] = [
     icon: Smartphone,
     title: "Airavatl",
     label: "Customer / Consigner App",
+    slug: "customer-app",
     description:
       "A customer-facing app where consigners and businesses can create transport requirements, manage bookings, and access logistics services digitally.",
     href: "https://play.google.com/store/apps/details?id=com.airavatl.app",
@@ -35,6 +39,7 @@ const platforms: Platform[] = [
     icon: Truck,
     title: "Airavatl Partner",
     label: "Driver / Vehicle Partner App",
+    slug: "partner",
     description:
       "A partner app built for drivers and vehicle owners to receive logistics opportunities, participate in transport operations, and manage assigned work.",
     href: "https://play.google.com/store/apps/details?id=com.airavatl.partners",
@@ -43,6 +48,7 @@ const platforms: Platform[] = [
     icon: LayoutDashboard,
     title: "Airavatl Enterprise",
     label: "Customer Portal",
+    slug: "enterprise",
     description:
       "A customer portal that allows clients to access updates, submit requirements, view relevant information, and interact with business services online.",
   },
@@ -50,6 +56,7 @@ const platforms: Platform[] = [
     icon: BarChart3,
     title: "Airavatl Inroute",
     label: "Sales & Distribution (SDMS)",
+    slug: "inroute",
     description:
       "Our sales and distribution management platform for managing sales teams, product movement, inventory allocation, distributor workflows, and business reporting.",
   },
@@ -89,17 +96,25 @@ export default function EcosystemShowcase() {
           <span className="text-slate-500">, {current.label}</span>
         </p>
 
-        {current.href ? (
-          <a
-            href={current.href}
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <Link
+            href={`/solutions/${current.slug}`}
             style={{ backgroundColor: "#4c1d95" }}
-            className="mt-6 inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-medium text-white shadow-sm transition-all hover:-translate-y-0.5 hover:opacity-90"
+            className="inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-medium text-white shadow-sm transition-all hover:-translate-y-0.5 hover:opacity-90"
           >
-            Download on Google Play
-          </a>
-        ) : null}
+            View overview →
+          </Link>
+          {current.href ? (
+            <a
+              href={current.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-violet-200 bg-white px-6 py-2.5 text-sm font-medium text-violet-900 transition-all hover:-translate-y-0.5 hover:bg-violet-50"
+            >
+              Download on Google Play
+            </a>
+          ) : null}
+        </div>
       </div>
 
       {/* Logo tabs — bottom */}

@@ -29,7 +29,7 @@ const columns: Column[] = [
   {
     heading: "Company",
     links: [
-      { label: "About", href: "/#about" },
+      { label: "About", href: "/about" },
       { label: "Contact", href: "/contact" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Delete Account", href: "/delete-account" },
