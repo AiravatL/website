@@ -6,6 +6,7 @@ import SolutionsPreview from "@/components/solutions-preview";
 import ClientsBar from "@/components/clients-bar";
 import ServicesPreview from "@/components/services-preview";
 import Testimonials from "@/components/testimonials";
+import ContactCta from "@/components/contact-cta";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <SolutionsPreview />
       <ServicesPreview />
       <Testimonials />
+      <ContactCta />
     </>
   );
 }
