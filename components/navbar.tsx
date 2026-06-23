@@ -81,6 +81,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8 mx-12">
           <NavDropdown title="Services" href="/services" items={servicesMenu} />
           <NavDropdown title="Solutions" href="/solutions" items={solutionsMenu} />
+          <Link href="/inroute" className="text-slate-800 hover:text-slate-600 transition-colors text-sm">InRoute</Link>
           <Link href="/about" className="text-slate-800 hover:text-slate-600 transition-colors text-sm">About</Link>
         </div>
 
@@ -111,6 +112,7 @@ export default function Navbar() {
         <div className="md:hidden absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[80vw] max-w-xs bg-white border border-violet-100 rounded-2xl shadow-lg p-3 flex flex-col">
           <Link href="/services" onClick={() => setIsOpen(false)} className="px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm">Services</Link>
           <Link href="/solutions" onClick={() => setIsOpen(false)} className="px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm">Solutions</Link>
+          <Link href="/inroute" onClick={() => setIsOpen(false)} className="px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm">InRoute</Link>
           <Link href="/about" onClick={() => setIsOpen(false)} className="px-4 py-2.5 rounded-xl text-slate-800 hover:bg-violet-50 transition-colors text-sm">About</Link>
           <a
             href="https://enterprise.airavatl.in/"

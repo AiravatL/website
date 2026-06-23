@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        jakarta: ["var(--font-jakarta)", "sans-serif"],
+        spartan: ["var(--font-league-spartan)", "sans-serif"],
         sans: [
           "-apple-system",
           "BlinkMacSystemFont",
